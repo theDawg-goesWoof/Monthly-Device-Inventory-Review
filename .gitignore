@@ -1,0 +1,7 @@
+# Device review reports contain client device inventory (names, OS, object IDs,
+# compliance state). They are generated output, not source - never commit them.
+*.csv
+
+# OneDrive / Windows Explorer artifacts
+desktop.ini
+Thumbs.db
