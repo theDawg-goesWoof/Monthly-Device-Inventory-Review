@@ -246,7 +246,7 @@ account:
 
 | Signed in as | Report |
 |---|---|
-| `chadmin@contoso.com` | `Contoso_Device_Review_2026-09-02.csv` |
+| `admin@contoso.com` | `Contoso_Device_Review_2026-09-02.csv` |
 | `admin@contoso.onmicrosoft.com` | `Contoso_Device_Review_2026-09-02.csv` |
 | `admin@contoso.co.uk` | `Contoso_Device_Review_2026-09-02.csv` |
 
@@ -277,7 +277,7 @@ Signs out with `Disconnect-MgGraph`, then **re-checks `Get-MgContext` to confirm
 actually gone** rather than trusting the cmdlet's silence, and prints the verdict:
 
 ```
-  [ OK ]   Signed out of tenant 1234abcd-... (chadmin@contoso.com)
+  [ OK ]   Signed out of tenant 1234abcd-... (admin@contoso.com)
 
 Sign-out successful - safe to run this script against the next tenant.
 ```
