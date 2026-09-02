@@ -29,7 +29,7 @@
 
 .PARAMETER CsvPath
     Output path for the report. Defaults to a file beside this script named after the tenant
-    and today's date, e.g. signing in as chadmin@contoso.com produces
+    and today's date, e.g. signing in as admin@contoso.com produces
     Contoso_Device_Review_2026-09-02.csv. A second run on the same day gets a _2, _3, ... suffix
     rather than overwriting the earlier report.
 
@@ -144,7 +144,7 @@ function Get-YesNoAnswer {
 function Get-TenantSlug {
     <#
         Derives a friendly, filename-safe tenant name for the report.
-        chadmin@contoso.com            -> Contoso
+        admin@contoso.com              -> Contoso
         admin@contoso.onmicrosoft.com  -> Contoso
         admin@contoso.co.uk            -> Contoso
         Falls back to the tenant's initial verified domain (app-only sign-in has no UPN),
